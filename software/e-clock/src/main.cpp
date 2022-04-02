@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <time.h>
+#include "WeatherNow.h"
 
 const char *ssid = "斯是陋室";                //Your wifi's name
 const char *password = "wwdxthsjlcsrlq";     //Your wifi's password
@@ -36,7 +37,7 @@ void setup()
 
   // init and get the time
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
-  printLocalTime();
+  // printLocalTime();
 
   // disconnect WiFi as it's no longer needed
   // WiFi.disconnect(true);
@@ -45,5 +46,5 @@ void setup()
 
 void loop()
 {
-  
+
 }
